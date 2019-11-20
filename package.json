@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "eslint": "^6.6.0",
-    "koa": "^2.11.0"
+    "koa": "^2.11.0",
+    "mongoose": "^5.7.12"
   }
 }
