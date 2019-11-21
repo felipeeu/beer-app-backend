@@ -6,7 +6,8 @@ let StyleSchema = new Schema({
     abv: {type: String , required: true},
     ibu:{type: String , required: true},
     pair:{type: String , required: true},
-    info: {type:String,required: true}
+    info: {type:String,required: true},
+    group:{type:String, required: true}
 });
 
 
