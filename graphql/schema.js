@@ -1,6 +1,6 @@
 const graphql = require('graphql')
-const Group = require('./models/group.model');
-const Style = require('./models/style.model')
+const Group = require('../models/group.model');
+const Style = require('../models/style.model')
 
 const {
     GraphQLString,

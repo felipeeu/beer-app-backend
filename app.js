@@ -2,7 +2,7 @@ const koa = require('koa');
 const mongoose = require('mongoose');
 const mount = require('koa-mount');
 const graphqlHTTP = require('koa-graphql');
-const schema = require('./schema.js')
+const schema = require('./graphql/schema')
 
 mongoose.connect("mongodb+srv://felipeeu:fevi2406@clusterfelipe-kdk6j.mongodb.net/beer?retryWrites=true");
 var db = mongoose.connection;
