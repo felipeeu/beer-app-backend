@@ -33,6 +33,7 @@ const StyleType = new GraphQLObjectType({
         ibu:stringNonNull,
         pair:stringNonNull, 
         group:stringNonNull,
+        img:stringNonNull,
     })
 });
 
