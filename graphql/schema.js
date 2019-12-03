@@ -1,6 +1,7 @@
 const graphql = require('graphql')
-const Group = require('../models/group.model');
-const Style = require('../models/style.model')
+//import{ graphql} from 'graphql'
+import GroupModel from '../models/group.model'
+import StyleModel from '../models/style.model'
 
 const {
     GraphQLString,
@@ -46,7 +47,7 @@ const RootQueryType = new GraphQLObjectType({
             type: new GraphQLList(GroupType),
             description: "The two major groups",
             resolve(){
-                return Group.find({})
+                return GroupModel.find({})
             }
         },
 
@@ -55,15 +56,13 @@ const RootQueryType = new GraphQLObjectType({
             description: "List of all styles",
             args: {group: stringNonNull},
             resolve( root , args) {
-                return Style.find({group: args.group})
+                return StyleModel.find({group: args.group})
             }
         }
     })
 })
-
     const BeerSchema = new GraphQLSchema({
-        query: RootQueryType,
-       
+        query: RootQueryType, 
     });
-    
-    module.exports = BeerSchema;
+   
+    export default BeerSchema; 

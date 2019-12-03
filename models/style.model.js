@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
+
 const Schema = mongoose.Schema;
 
 let StyleSchema = new Schema({
@@ -11,6 +12,5 @@ let StyleSchema = new Schema({
     img:{type:String, required: true}
 });
 
-
-
-module.exports = mongoose.model('Style', StyleSchema);
+const StyleModel = mongoose.model('Style', StyleSchema);
+export default StyleModel
