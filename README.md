@@ -14,7 +14,10 @@ node index.js
 * [Koa](https://koajs.com/)
 * [GraphQL](https://graphql.org/)
 
-
+## Demo
+![Groups](groups.png)
+![Ales Beer](ale.png)
+![Lagers Beer](lager.png)
 
 
 
